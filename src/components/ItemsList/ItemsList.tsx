@@ -5,6 +5,7 @@ import { filterAction } from '../../store/actions';
 import { getStateUI } from '../../store/selectors';
 import { Item as ItemType } from '../../types/types';
 import ErrorMessage from '../shared/ErrorMessage';
+import None from '../shared/None';
 import SmallLoader from '../shared/SmallLoader';
 import Item from './Item';
 
@@ -33,6 +34,8 @@ const ItemsList = ({ res, sort, setDetailed }: PropTypes) => {
   let numFiltered = 0;
 
   if (error) return <ErrorMessage />;
+
+  if (res.length === 0) return <None />;
   return (
     <>
       <StyledList>

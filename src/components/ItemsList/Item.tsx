@@ -4,11 +4,6 @@ import styled from 'styled-components';
 
 const ItemStyled = styled.div`
   text-align: center;
-  // transform: rotateX(25deg) rotateY(0deg);
-  // transform-style: preserve-3d;
-  // &:hover {
-  //   transform: rotateX(0deg) rotateY(0deg);
-  // }
   transition: all 0.3s;
 
   &:hover {
@@ -46,7 +41,9 @@ const Item = ({ item, setDetailed }: PropTypes) => {
     >
       <ItemWrapper>
         <ItemStyled>
-          {item.name || item.title} ({item.height})
+          <b>
+            {item.name || item.title} ({item.height})
+          </b>
         </ItemStyled>
       </ItemWrapper>
     </ItemContainer>

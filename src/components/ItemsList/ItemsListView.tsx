@@ -32,6 +32,12 @@ const TitleStyle = styled.div`
   @media screen and (max-width: 762px) {
     flex-direction: column;
     align-items: center;
+    height: 7rem;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 95%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 `;
 

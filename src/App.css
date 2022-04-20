@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: swty;
+  src: url('./assets/fonts/Starjedi.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: roboto;
+  src: url('./assets/fonts/Roboto-Thin.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: roboto-condensed;
+  src: url('./assets/fonts/Roboto-Condensed.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+  background-color: black;
+  color: rgb(248, 248, 122);
+  font-family: swty;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: rgb(255, 255, 145);
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:visited {
+  -webkit-text-stroke: 1px #000000;
+}
+
+a:hover {
+  color: yellow;
+  transition: color 0.5s;
+}
+
+ul {
+  list-style: none;
 }

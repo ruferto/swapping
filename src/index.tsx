@@ -1,16 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Root from './Root';
 import reportWebVitals from './reportWebVitals';
+import configureStore from './store';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+export const preLoadedState = {
+  data: { people: { loaded: false, next: 'people', data: [] } },
+  ui: {
+    filter: '',
+    sort: 'name',
+    isLoading: false,
+    error: null,
+  },
+};
+
+const store = configureStore(preLoadedState);
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Root store={store} />
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

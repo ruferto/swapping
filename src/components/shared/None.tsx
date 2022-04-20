@@ -14,7 +14,7 @@ const None = () => {
     <StyledNone>
       Oops, something went wrong retrieving characters...
       <br />
-      Try <a href="/">reloading</a> after a seconds
+      Try <a href="/">reloading</a> after a minute.
     </StyledNone>
   );
 };

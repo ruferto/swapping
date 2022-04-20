@@ -35,7 +35,7 @@ const ItemsList = ({ res, sort, setDetailed }: PropTypes) => {
 
   if (error) return <ErrorMessage />;
 
-  if (res.length === 0) return <None />;
+  if (res.length === 0 && !isLoading) return <None />;
   return (
     <>
       <StyledList>

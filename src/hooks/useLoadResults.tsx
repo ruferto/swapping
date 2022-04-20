@@ -14,7 +14,7 @@ export const useLoadResults = (kind: string) => {
 
   const loadMore = (): void => {
     if (next) {
-      // dispatch(firstLoadAction(next, kind, setRes));
+      dispatch(firstLoadAction(next, kind, setRes));
     }
   };
 

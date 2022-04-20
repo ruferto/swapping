@@ -7,7 +7,6 @@ import configureStore from './store';
 
 export const preLoadedState = {
   data: { people: { loaded: false, next: 'people', data: [] } },
-  dataDetails: [],
   ui: {
     filter: '',
     sort: 'name',

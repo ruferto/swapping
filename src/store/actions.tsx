@@ -50,7 +50,7 @@ export const dataAction = (
 export const firstLoadAction = (
   next: string | null,
   kind: string,
-  setRes: any,
+  setRes: React.Dispatch<React.SetStateAction<Item[]>>,
 ) => {
   return async function (dispatch: any, getState: any) {
     dispatch(dataRequest());

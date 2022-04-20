@@ -42,7 +42,7 @@ const TitleStyle = styled.div`
 `;
 
 const StyledButton = styled.button`
-  height: 1.5rem;
+  min-height: 1.5rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: white;
   border-width: 1px;

@@ -2,13 +2,13 @@
 
 Project to test the provided by `https:/swapi.dev` with TypeScript.
 
-# Technologies
+## Technologies
 
 - React 17.0.2
 - Redux 4.1.2
 - Prettier and Lint to format and check code.
 
-# Start playing
+## Start playing
 
 - Clone this project in local:
 
@@ -23,6 +23,10 @@ Project to test the provided by `https:/swapi.dev` with TypeScript.
 - Run the project and start playing in:
 
   `npm start` and visit `http://localhost:3000`
+
+## ToDo
+
+With more time I would like to implement real responsiveness and a more elaborated style for the UI.
 
 # Getting Started with Create React App
 

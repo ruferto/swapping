@@ -1,7 +1,9 @@
+import ItemsListView from '../ItemsList/ItemsListView';
+
 const Home = () => {
   return (
     <>
-      <div>Home</div>
+      <ItemsListView {...{ title: 'people' }} />
     </>
   );
 };

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { filterAction } from '../../store/actions';
 import { getStateUI } from '../../store/selectors';
+import closeIcon from '../../assets/img/close-cross-svgrepo-com.svg';
 
 const StyledInput = styled.input`
   font-size: 1rem;
@@ -20,18 +21,18 @@ const StyledInput = styled.input`
 `;
 
 const StyledResetFilterButton = styled.button`
-  color: gray;
+  color: black;
   background-color: lightgray;
-  border-radius: 50px;
+  border-radius: 60px;
   margin-left: 0.5rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   text-align: left;
+  opacity: 0.8;
   @media screen and (max-width: 762px) {
-    color: white;
-    background-color: gray;
-    opacity: 0.8;
+    color: black;
+    background-color: white;
   }
 `;
 const FilterForm = () => {
@@ -55,7 +56,7 @@ const FilterForm = () => {
         hidden={isLoading}
       />
       <StyledResetFilterButton onClick={resetFilter} hidden={filter === ''}>
-        ╳
+        <img src={closeIcon} alt="back" height="12" />
       </StyledResetFilterButton>
     </div>
   );

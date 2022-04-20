@@ -55,6 +55,13 @@ const StyledButton = styled.button`
     background-color: white;
   }
 `;
+const ElementsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: 0rem;
+`;
 
 const ItemsListView = ({ title }: Title) => {
   const { res } = useLoadResults(title);
@@ -72,15 +79,7 @@ const ItemsListView = ({ title }: Title) => {
     <>
       <TitleStyle>
         <div>Star Wars People</div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'baseline',
-            justifyContent: 'flex-start',
-            margin: '0rem',
-          }}
-        >
+        <ElementsContainer>
           <StyledButton
             hidden={isLoading}
             onClick={() => {
@@ -91,7 +90,7 @@ const ItemsListView = ({ title }: Title) => {
             Sort by <b>{sort === 'name' ? 'height' : 'name'}</b>
           </StyledButton>
           <FilterForm />
-        </div>
+        </ElementsContainer>
       </TitleStyle>
       <ItemsList
         {...{

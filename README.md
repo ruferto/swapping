@@ -1,6 +1,6 @@
 # Star Wars API exercise
 
-Project to test the provided by `https:/swapi.dev` with TypeScript. You can see a live demo here: `https://resplendent-marigold-a9135b.netlify.app`
+Project to test the API provided by `https:/swapi.dev` with TypeScript. You can see a live demo here: `https://resplendent-marigold-a9135b.netlify.app`
 
 ## Technologies
 
